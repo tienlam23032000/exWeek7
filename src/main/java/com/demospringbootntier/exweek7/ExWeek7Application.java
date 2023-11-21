@@ -15,7 +15,7 @@ public class ExWeek7Application {
         // Khởi chạy ứng dụng Spring Boot và nhận về ApplicationContext
         ApplicationContext context = SpringApplication.run(ExWeek7Application.class, args);
 
-        // Lấy bean từ ApplicationContext (ví dụ: UserService)
+        // Lấy bean từ ApplicationContext: UserService
         UserService userService = context.getBean(UserService.class);
 
         //thêm người dùng
