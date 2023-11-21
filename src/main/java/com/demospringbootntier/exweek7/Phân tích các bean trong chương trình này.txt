@@ -1,0 +1,18 @@
+1, UserService: Bean này được tạo và quản lý bởi Spring, và nó có một dependency là UserRepository.
+Nó thực hiện logic liên quan đến người dùng, chẳng hạn như thêm người dùng, lấy danh sách người dùng
+và chuyển đổi giữa User và UserDTO.
+
+2, UserRepository: Bean này quản lý danh sách người dùng.
+Nó được sử dụng để thực hiện các thao tác CRUD (Create,Read, Update, Delete) trên danh sách người dùng.
+
+3, UserController: Bean này là một RestController, quản lý các endpoint HTTP để thực hiện các thao tác
+liên quan đến người dùng.
+Nó sử dụng UserService để xử lý các yêu cầu.
+
+4, UserDTO và User: Đây là các lớp đại diện cho dữ liệu của người dùng, chia thành đối tượng DTO để truyền
+dữ liệu giữa các tầng và đối tượng domain để biểu diễn dữ liệu trong ứng dụng.
+
+5, MyApplication: Bean này là một ứng dụng Spring Boot chính, được sử dụng để cấu hình và khởi chạy ứng dụng.
+
+6. DispatcherServlet, RequestMappingHandlerMapping, RequestMappingHandlerAdapter: Các bean này là các thành 
+phần của Spring MVC, chịu trách nhiệm xử lý và điều hướng các yêu cầu HTTP đến các controller.
